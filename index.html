@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+  <link rel="stylesheet" href="style.css" />
+  <title>Blog.hr → WordPress konverter</title>
+</head>
+<body>
+  
+  <div id="drop-zone" tabindex="0" role="button" aria-label="Ispusti Blog.hr eksport ZIP datoteku ovdje ili klikni za odabir datoteke">
+    <p class="drop-title">Ispusti Blog.hr eksport ZIP datoteku ovdje</p>
+    <p class="drop-sub">ili</p>
+    <label class="browse-btn" for="file-input">Odaberi datoteku</label>
+    <input type="file" id="file-input" accept=".zip,application/zip,application/x-zip-compressed" />
+    <p class="drop-sub">Prihvaćaju se samo .zip datoteke.</p>
+    <button id="download-btn" style="visibility:hidden">Preuzmi WordPress XML datoteku</button>
+    <div id="error-message"></div>
+  </div>
+  
+  <script src="main.js"></script>
+
+</body>
+</html>
